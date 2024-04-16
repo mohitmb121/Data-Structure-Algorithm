@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Traversing</title>
+    <script>
+      let a1 = [9, 45, 2, 8, 45, 23, 7, 78, 0, 11, 41, 77];
+     
+      function getElement() {
+        let a2 = document.getElementById("element").value;
+        if (!isNaN(parseInt(a2)) && a2 >= 0 && a2 < a1.length) {
+          alert(a1[parseInt(a2)]);
+        } else {
+          alert("Please enter valid input");
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+</html>
